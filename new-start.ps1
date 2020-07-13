@@ -77,9 +77,6 @@ choco install docker-for-windows --yes
 
 Update-Environment-Path
 
-docker pull worpress
-docker pull mysql
-docker pull phpmyadmin
 
 
 # Yarn
@@ -88,11 +85,6 @@ npm install -g yarn@berry
 
 # choco install yarn --yes 
 
-# Bower
-npm install -g bower
-
-# Grunt
-npm install -g grunt-cli
 
 # ESLint
 npm install -g eslint
@@ -108,16 +100,6 @@ install-peerdeps --dev eslint-config-airbnb
 choco install vscode --yes # includes dotnet
 Update-Environment-Path
 git config --global core.editor "code --wait"
-
-# HTML, CSS, JavaScript support
-code --install-extension Zignd.html-css-class-completion
-code --install-extension lonefy.vscode-JS-CSS-HTML-formatter
-code --install-extension robinbentley.sass-indented
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension RobinMalfait.prettier-eslint-vscode
-code --install-extension flowtype.flow-for-vscode
-code --install-extension dzannotti.vscode-babel-coloring
-code --install-extension esbenp.prettier-vscode
 
 # Kalzad VSCode extensions
 
@@ -161,7 +143,6 @@ code --install-extension humao.rest-client
 code --install-extension idleberg.icon-fonts
 code --install-extension joelday.docthis
 code --install-extension johnpapa.vscode-peacock
-code --install-extension karigari.chat
 code --install-extension kisstkondoros.vscode-gutter-preview
 code --install-extension KnisterPeter.vscode-github
 code --install-extension konstantin.wrapSelection
@@ -220,13 +201,13 @@ code --install-extension vsmobile.vscode-react-native
 npm install -g create-react-native-app
 npm install -g react-native-cli
 npm install -g create-react-app
+npm install -g expo-cli
 
 # yarn global dep
 
 yarn global add  create-react-native-app
 yarn global add react-native-cli
 yarn global add create-react-app
-yarn global add add @nrwl/cli
 
 # Docker support
 code --install-extension PeterJausovec.vscode-docker
@@ -241,8 +222,6 @@ npm install -g gatsby-cli
 
 # File Management
 choco install 7zip --yes
-choco install filezilla --yes
-choco install dropbox --yes
 
 
 # Browsers
@@ -250,7 +229,6 @@ choco install googlechrome --yes
 
 # Misc
 choco install firacode --yes # See https://www.youtube.com/watch?v=KI6m_B1f8jc
-choco install everything --yes
 choco install spotify --yes
 choco install discord --yes
 choco install steam --yes
@@ -261,7 +239,6 @@ Update-Environment-Path
 
 # Terminal Emulator
 
-choco install alacritty --yes
 choco install spacemacs --yes
 Update-Environment-Path
 
