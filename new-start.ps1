@@ -45,8 +45,7 @@ Update-Environment-Path
 #
 # Languages
 #
-choco install php --yes
-choco install python2 --yes
+
 Update-Environment-Path
 
 # Node
@@ -233,6 +232,8 @@ choco install spotify --yes
 choco install discord --yes
 choco install steam --yes
 choco install ccleaner --yes
+choco install powertoys
+
 
 Update-Environment-Path
 
