@@ -30,8 +30,6 @@ Update-Environment-Path
 #
 
 choco install git --yes --params '/GitAndUnixToolsOnPath'
-git config --global user.name "jasontmiani"
-git config --global user.email "jasontmiani@gmail.com"
 git config --global color.ui "auto"
 
 
@@ -232,15 +230,23 @@ choco install spotify --yes
 choco install discord --yes
 choco install steam --yes
 choco install ccleaner --yes
-choco install powertoys
+choco install powertoys --yes
 
 
 Update-Environment-Path
 
 
-# Terminal Emulator
+# Terminal Emulators
 
 choco install spacemacs --yes
+choco install microsoft-windows-terminal --yes
+
+# This installs PowerShell 7+. It supports modifying the context menu!
+msiexec.exe /package PowerShell-7.0.3-win-x64.msi /quiet ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ENABLE_PSREMOTING=1 REGISTER_MANIFEST=1
+
+# this loads all the terminal emulators into the context menu. tyvm @lextm https://github.com/lextm/windowsterminal-shell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/lextm/windowsterminal-shell/master/install.ps1'))
+
 Update-Environment-Path
 
 
